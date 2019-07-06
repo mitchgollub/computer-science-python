@@ -4,6 +4,7 @@ from typing import Generator  # fib 6
 
 # fib3 - caches function input/output using a dictionary object
 from typing import Dict
+
 memo: Dict[int, int] = {0: 0, 1: 1}
 
 
