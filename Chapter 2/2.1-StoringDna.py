@@ -12,7 +12,7 @@ gene_str: str = "ACGTGGCTCTCTAACGTACGTACGTACGGGGTTTATATATACCCTAGGACTCCCTTT"
 def string_to_gene(s: str) -> Gene:
     gene: Gene = []
     for i in range(0, len(s), 3):
-        if (i + 2) >= len(s):  # don't run off end!
+        if (i + 2) >= len(s):  # don't run off the end!
             return gene
         #  initialize codon out of three nucleotides
         codon: Codon = (Nucleotide[s[i]],
